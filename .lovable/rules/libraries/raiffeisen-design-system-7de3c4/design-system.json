@@ -1,0 +1,2285 @@
+{
+  "meta": {
+    "name": "Raiffeisen Design System",
+    "package": "@ws-9d52c98717be1acb16bb/10d8a3c6-47d4-46c9-b2c5-dfeb3e8fa100",
+    "version": "1.1.0",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "starter_template": "custom_design_system",
+    "theme_files": [
+      "src/styles.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "be3d582082b79d849296c8aad7dd9f006c2c4dc75838fc378d4e4e5f32838657",
+      ".dsignore": "5dc76db8e8768ad1270090c0bd33946d",
+      ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
+      ".lovable/figma-rules-audit.md": "49014970f2fc7446d13f2e80128ceda9",
+      ".lovable/meta.yaml": "8794970d6049858cc148d2b86f7a2b22",
+      ".lovable/project.json": "8a614b0de0ec719c6a3c839b39ebb7b9",
+      ".lovable/sources.yaml": "cefacacec56ba913b8efa1008aa975e7",
+      ".lovable/system.md": "95dbb2d5c8ead8dbb31c54d55c18bf65",
+      ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
+      ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
+      "AGENTS.md": "ad5007417a2eac401a9fc5c57a77be8b",
+      "README.md": "15ccc2c959c0bff2136261ce044c418f",
+      "bunfig.toml": "89115995d9de72fdfc894e16b1e75297",
+      "components.json": "30d3d035361ce807021f5c54620962e9",
+      "docs/colors.md": "f7b8f93e0769e6810501d26fd445d1cb",
+      "docs/components/accordion.md": "3be89dc96e5acf91795eab1bc0ff1839",
+      "docs/components/alert.md": "a51076c24f52b94f8b29946b3ea69546",
+      "docs/components/badge.md": "7aec7542b6ccb2d312cf7d3df0d0c795",
+      "docs/components/button-set.md": "ff5d6d20561a9152985b0d8827b2458c",
+      "docs/components/button.md": "62a996f1aba462f5ff5fd7de87d6cf1e",
+      "docs/components/chart.md": "c51b295bd5c7b26c269b919d096faf56",
+      "docs/components/input.md": "d09f74403cbe81ee3a456e5014f4fca7",
+      "docs/components/link.md": "89113c23e3513c9ed87e17c93b29b245",
+      "docs/components/loader-square.md": "74bae6a5421b32e7a5560c99cdb9eafc",
+      "docs/components/logo.md": "6581d17d9258f240c85d83c2f10c019a",
+      "docs/components/popover.md": "d7ae637b4529e1cca4aa903a7f3a520d",
+      "docs/components/skeleton.md": "bbafd004d53dd393e4b6d4aa02f4ee9b",
+      "docs/components/snackbar.md": "5511af1b821c89b5c3ca8ac8ca0ede46",
+      "docs/components/stock-chart.md": "d35e75dddcae0e7710379c0fbb96e678",
+      "docs/components/table.md": "96bf15029daab2912f87af67affa7d46",
+      "docs/components/toast.md": "ccc87748888dfa8706c4d7923067de7f",
+      "docs/components/tooltip.md": "b1dc51f50f48a984c0db0a4ebacf9c02",
+      "docs/icons.md": "c7ac0f136d0113d5b37e1bca9fb2b1b5",
+      "docs/shadows.md": "87d021cea13014934e3b7ae0492e3a69",
+      "docs/spacing-layout.md": "b31fe15f3e3a3f17aa990100170c08ef",
+      "docs/system.md": "b312eb5d2d9926669f46642bab808ef4",
+      "docs/typography.md": "b58aec78eea748741ae2a6476d8a9221",
+      "eslint.config.js": "345bdd57e188e0e4525edcd00e5003f5",
+      "lovable.toml": "b32568cbef680de9cbb176344986f1a3",
+      "package.json": "d394c4d2cb3e7a82019e1d756d1e1207",
+      "public/favicon.svg": "3495790caf8e258fcad33c24dd790841",
+      "public/robots.txt": "f9dff89adf98833e676de2205921996a",
+      "roadmap.md": "a17012872cd46ee6f3dd650477f8f248",
+      "src/assets/fonts/FrutigerNextforRB-Bold.woff2": "2748585be1406a508ab4a8cf9c4a0e24",
+      "src/assets/fonts/FrutigerNextforRB-Heavy.woff2": "70c927aaa89cb9647f0ef00e043bf52d",
+      "src/assets/fonts/FrutigerNextforRB-Medium.woff2": "70d4e5ee5abd3e5d8bd4eb670cae8929",
+      "src/assets/fonts/FrutigerNextforRB-Regular.woff2": "e9dd776e65516b551c3731a4285ef945",
+      "src/assets/fonts/fonts.css": "c298f00b807e03e89e8487656e311caf",
+      "src/assets/logos/raiffeisen-logo.svg": "3495790caf8e258fcad33c24dd790841",
+      "src/components/accordion.test.tsx": "d60fa38510160f13fcb3b91dba1da7a6",
+      "src/components/accordion.tsx": "f32896eb039fc60719fd5eb184b90f06",
+      "src/components/alert.test.tsx": "0c3c8abe66930b559385cf18337be99b",
+      "src/components/alert.tsx": "d28ad23568d28d96f4a4002d9ab4bf2d",
+      "src/components/badge.test.tsx": "baa33d15a28c4fab770f967d2a0f4bbc",
+      "src/components/badge.tsx": "7573ab8f551375de018b50df6591a2c3",
+      "src/components/bar-chart.test.tsx": "4f5f0c7fc6918481e589c998d5e50b80",
+      "src/components/bar-chart.tsx": "c51fd21965eec6a7cabb7db2126632d9",
+      "src/components/button-set.test.tsx": "3a8699ba1db4cf08112080087f731926",
+      "src/components/button-set.tsx": "f36b253ac0e87982de3c73e65489c7c2",
+      "src/components/button.test.tsx": "fa720806d6e248b8364e08076636c618",
+      "src/components/button.tsx": "fa8c68073b06e45fe5bdf622542204a1",
+      "src/components/feedback.test.tsx": "76e4c00d85176b6f47919d04f5dc3c27",
+      "src/components/icon-button.tsx": "4f9bdfb874f0bf9f90b7183b05643e72",
+      "src/components/icon.test.tsx": "b7de688c9ba571dd926076887fc618c3",
+      "src/components/icon.tsx": "68c3a9b410335c1298dec233c3bd7517",
+      "src/components/input.test.tsx": "fab876721a8554518bcb35746dc7da31",
+      "src/components/input.tsx": "e743641a0677f711b48276f4c1e44427",
+      "src/components/legend.tsx": "4ef19d96ef0eeaa001479bbac8fe36fb",
+      "src/components/link.test.tsx": "b4f6e4f1afabb4eab02937432ef52530",
+      "src/components/link.tsx": "f8b504a74309284d0b0e7084246d544d",
+      "src/components/loader-square.tsx": "ed030ab2b2c425565483c1fd255fe6ad",
+      "src/components/logo.test.tsx": "47295696888a1a593683f74e55c81f43",
+      "src/components/logo.tsx": "b6ed5c1cb4180ed74ce6e129aeeb7449",
+      "src/components/popover.tsx": "5621403c60a44c735740e9fe2d0a8fc3",
+      "src/components/skeleton.test.tsx": "6a4ee4665ee59883f5f844e2c3bc8890",
+      "src/components/skeleton.tsx": "7327b9f5316becfaff17e221363e3724",
+      "src/components/snackbar.tsx": "ed7902edb42c8e3d381aa6df59f5c538",
+      "src/components/stock-chart.test.tsx": "eec4831a7aae934621021353493acc75",
+      "src/components/stock-chart.tsx": "e9893637acf6fb1664c86a1fe37fda3f",
+      "src/components/table.test.tsx": "21b8569a06ee47dc3c39e268ea98d330",
+      "src/components/table.tsx": "5b65e05dedec31f8572cb545812a6af1",
+      "src/components/toast.tsx": "167b8735b08b5570dc8865640f2b46d8",
+      "src/components/tooltip.tsx": "7dfab0b8fcea4ee74e05ededba2cc38a",
+      "src/components/ui/accordion.tsx": "55f9dda62b4e3913c9b23e5015a86aef",
+      "src/components/ui/alert-dialog.tsx": "96350e949e9b7b674545430a410ab89c",
+      "src/components/ui/alert.tsx": "f993d7e96b1e25ce50e68ed97e11d2a8",
+      "src/components/ui/aspect-ratio.tsx": "c5c364545e1b25a94e9e752cd67ad048",
+      "src/components/ui/avatar.tsx": "72989cd32f72c4122802540ef32525a5",
+      "src/components/ui/badge.tsx": "81cade001fc4260f9943e18dcd79449b",
+      "src/components/ui/breadcrumb.tsx": "bb9ac254f12662b20d5d50b84308bf3a",
+      "src/components/ui/button.tsx": "7d07d520f486b12bd47373d694ecd2ee",
+      "src/components/ui/calendar.tsx": "d849cc610e2683271f3f1c47d093cf30",
+      "src/components/ui/card.tsx": "d6c48ea36221b9cdc3576d305d12d5d5",
+      "src/components/ui/carousel.tsx": "e324c68ae00cd5aed49317638abd429a",
+      "src/components/ui/chart.tsx": "6a3baf94f2e89f1f97d4d7a28f3622d2",
+      "src/components/ui/checkbox.tsx": "f78aac270ca482c8c2cb907ef6260462",
+      "src/components/ui/collapsible.tsx": "767631bbc344945c236f185f4078d71d",
+      "src/components/ui/command.tsx": "014782599cc838b021ec68b07ad4ea02",
+      "src/components/ui/context-menu.tsx": "3ba8244ea23df34a1dba92f3a1230dad",
+      "src/components/ui/dialog.tsx": "ef4fe8e7de8675730afe3d633b260e09",
+      "src/components/ui/drawer.tsx": "8be333e8fd8e42576b1b5f72f07f4337",
+      "src/components/ui/dropdown-menu.tsx": "28d6e98d3c7811fc0514bfa69416f087",
+      "src/components/ui/form.tsx": "1b0aa6302b9017ea2a1307c22a1d2983",
+      "src/components/ui/hover-card.tsx": "1442794c5ca2a78d69e4e613b315ed3d",
+      "src/components/ui/input-otp.tsx": "65625f2f1c4d731a760aeed7b54459d1",
+      "src/components/ui/input.tsx": "1d4cc52a4cd8afb3e18e45bda942bb8a",
+      "src/components/ui/label.tsx": "7e35df4ca8edd0835efd97ca7937ef92",
+      "src/components/ui/menubar.tsx": "3c4121a1e78d3f424a7295381a8997d3",
+      "src/components/ui/navigation-menu.tsx": "e85351147a02b29577ff83d188b63c24",
+      "src/components/ui/pagination.tsx": "fac6cdbb4bbf78b273d85cd36d6cbb49",
+      "src/components/ui/popover.tsx": "f18aa1da2144f25ee60795c539c51bcd",
+      "src/components/ui/progress.tsx": "55c462e5c9dd678dcf2c0c510b014ac4",
+      "src/components/ui/radio-group.tsx": "0e1ace237a5da3197e3eb1e6683faba9",
+      "src/components/ui/resizable.tsx": "d9fcb9203c749fcab4e125a99bb12a86",
+      "src/components/ui/scroll-area.tsx": "87b65d3eb26f2b02ff35a7acea585ba5",
+      "src/components/ui/select.tsx": "31ea1bbd6671833b010b2e852c8a55d0",
+      "src/components/ui/separator.tsx": "433d163c4ffa00b59398a0c293198b5e",
+      "src/components/ui/sheet.tsx": "0221fbf97b69611b47fcbc10bb27669a",
+      "src/components/ui/sidebar.tsx": "83c1623eb50ebc370d7b1b84a542e369",
+      "src/components/ui/skeleton.tsx": "41b182e6e2fc3805960d41e767d4a972",
+      "src/components/ui/slider.tsx": "4752f1bfa26426988d325599e01c335b",
+      "src/components/ui/sonner.tsx": "97f59f60be3413196d095fcbf7383216",
+      "src/components/ui/switch.tsx": "82f5d8b0c59bb7ff305caa9f502e79ff",
+      "src/components/ui/table.tsx": "7cc889989d53894b659903c73aded96e",
+      "src/components/ui/tabs.tsx": "56e725558c2ce72c18243bf51717f385",
+      "src/components/ui/textarea.tsx": "c7aad96fb9545210d53135a96c76ed6b",
+      "src/components/ui/toggle-group.tsx": "ac26383acf721d116ca8e3ab5c5355d5",
+      "src/components/ui/toggle.tsx": "ee8c5adac74e7242b85b544db1a8fbad",
+      "src/components/ui/tooltip.tsx": "67d71db5a1ab935695d1def497f5b8a6",
+      "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
+      "src/index.ts": "2afb712dd1400d0fd60bab85dae11303",
+      "src/lib/chart.test.ts": "f133f6b12a6b76738214adf499afb2de",
+      "src/lib/chart.ts": "7222c75c02099411114858645302a7ca",
+      "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
+      "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
+      "src/lib/format.test.ts": "f638f18295e19947f0658890214f461e",
+      "src/lib/format.ts": "6a772718d748a30a7aace45b1476fba0",
+      "src/lib/icons.ts": "88c85a37331dbdd181b1ef7a0f147dc6",
+      "src/lib/lovable-error-reporting.ts": "920280997099588d609de792663bcbf0",
+      "src/lib/utils.ts": "d9837f38cc05303254571985e3164050",
+      "src/routeTree.gen.ts": "6dc945f63bdf134763718662e24b405f",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
+      "src/routes/__root.tsx": "3ad84ef1a005af6df92c3b53c8228852",
+      "src/routes/colors.tsx": "a388bbeef4694d3f9f23536826f3fadd",
+      "src/routes/design-system.tsx": "2462d8e50c229e361f00ab181fd7e9f3",
+      "src/routes/icons.tsx": "745f01a04bf83c4fea7a2673452fd59b",
+      "src/routes/index.tsx": "371de3df95b8053d4d2077eceb269197",
+      "src/routes/typography.tsx": "04b682a445863ce3ffed67a95eca0a13",
+      "src/server.ts": "c7bbc49bb70e318af618d92775ee0f27",
+      "src/showcase/reference-data.test.ts": "4cc6dfa0febec907ab3b79b87ab048ea",
+      "src/showcase/reference-data.ts": "b8f56daf2eb74f0323fc58755aa9b387",
+      "src/showcase/reference.css": "40fbb5153c3bd2e261fb0742d821fd96",
+      "src/showcase/reference.tsx": "e5dc1b15fba98c0ea36dd930d55a6137",
+      "src/showcase/states.css": "be06a83cc045dc488d96afb8e6044231",
+      "src/start.ts": "0502f82c58afce5012b4c102e6fe2437",
+      "src/styles.css": "22b7e611b2d22421c3ba80548c46fb3b",
+      "src/test/app-routing.test.tsx": "dda0393c89450a1e5b7874b424dca80d",
+      "src/test/setup.ts": "beb4da531e2702f960ba8f3a33ef4f98",
+      "tests/loader-motion.py": "85eee8dc60226f7e969275fc0dc6b25b",
+      "tsconfig.json": "3d34aff71739a382bec105bad1c6948f",
+      "vite.config.ts": "d67e8217e5f31b87c276b6357c9aedcf",
+      "vitest.config.ts": "cdf9aff9538e6bc3eb92842264b030a9"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--c2010",
+        "raw": "#FFFFFF",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c2020",
+        "raw": "#F8F8F8",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c2110",
+        "raw": "#1A1A1A",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c2120",
+        "raw": "#333333",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c2130",
+        "raw": "#4D4D4D",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c2140",
+        "raw": "#949494",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c2150",
+        "raw": "#BCBCBC",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c2160",
+        "raw": "#D6D6D6",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c2170",
+        "raw": "#E5E5E5",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c2180",
+        "raw": "#F2F2F2",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c1010",
+        "raw": "#E82025",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c1020",
+        "raw": "#B90000",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c1030",
+        "raw": "#7B0000",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c1040",
+        "raw": "#550102",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c1050",
+        "raw": "#FFC0C6",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c4010",
+        "raw": "#7B6E4C",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c6010",
+        "raw": "#B60000",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c6011",
+        "raw": "#FF2532",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c6019",
+        "raw": "#F8E5E5",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c6020",
+        "raw": "#B94500",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c6021",
+        "raw": "#F98A24",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c6029",
+        "raw": "#F9EEE6",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c6030",
+        "raw": "#0C7D47",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c6031",
+        "raw": "#2FC07A",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c6039",
+        "raw": "#E7F2ED",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c3130",
+        "raw": "#A6917D",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c3020",
+        "raw": "#614073",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c3230",
+        "raw": "#C15C5C",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c3340",
+        "raw": "#53A097",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c3620",
+        "raw": "#7F5A6E",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c3710",
+        "raw": "#31495C",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--c3830",
+        "raw": "#90987D",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--danger",
+        "raw": "#CF0030",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-bar-thickness",
+        "raw": "12px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-legend-width",
+        "raw": "8px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-legend-height",
+        "raw": "12px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--popover-max-width",
+        "raw": "400px",
+        "source": "src/styles.css"
+      }
+    ],
+    "spacing": [
+      {
+        "name": "--letter-spacing-default",
+        "raw": "0",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--table-cell-padding",
+        "raw": "12px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--grid-gap",
+        "raw": "20px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--grid-margin",
+        "raw": "20px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--badge-button-gap",
+        "raw": "6px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--button-padding-top",
+        "raw": "20px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--button-padding-bottom",
+        "raw": "21px",
+        "source": "src/styles.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--font-brand",
+        "raw": "\"Frutiger Next for RB\", Arial, sans-serif",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-hero100-size",
+        "raw": "48px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-hero100-line",
+        "raw": "52px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-hero100-weight",
+        "raw": "900",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-hero200-size",
+        "raw": "40px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-hero200-line",
+        "raw": "42px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-hero200-weight",
+        "raw": "900",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t100-size",
+        "raw": "38px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t100-line",
+        "raw": "42px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t100-weight",
+        "raw": "700",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t200-size",
+        "raw": "32px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t200-line",
+        "raw": "39px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t200-weight",
+        "raw": "700",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t300-size",
+        "raw": "24px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t300-line",
+        "raw": "30px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t300-weight",
+        "raw": "700",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t400-size",
+        "raw": "20px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t400-line",
+        "raw": "26px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t400-weight",
+        "raw": "700",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t500-size",
+        "raw": "19px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t500-line",
+        "raw": "24px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-t500-weight",
+        "raw": "900",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-large-size",
+        "raw": "19px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-large-line",
+        "raw": "27px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-large-weight",
+        "raw": "400",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-standard-size",
+        "raw": "17px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-standard-line",
+        "raw": "23px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-standard-weight",
+        "raw": "400",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-small-size",
+        "raw": "15px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-small-line",
+        "raw": "20px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-small-weight",
+        "raw": "400",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-button-size",
+        "raw": "17px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-button-line",
+        "raw": "19px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-button-weight",
+        "raw": "500",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-navigation-size",
+        "raw": "18px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-navigation-line",
+        "raw": "24px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-navigation-weight",
+        "raw": "500",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-quote-size",
+        "raw": "27px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-quote-line",
+        "raw": "40px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-quote-weight",
+        "raw": "400",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n100-size",
+        "raw": "44px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n100-line",
+        "raw": "40px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n100-weight",
+        "raw": "900",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n200-size",
+        "raw": "38px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n200-line",
+        "raw": "36px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n200-weight",
+        "raw": "900",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n250-size",
+        "raw": "32px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n250-line",
+        "raw": "30px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n250-weight",
+        "raw": "900",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n300-size",
+        "raw": "30px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n300-line",
+        "raw": "34px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n300-weight",
+        "raw": "900",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n400-size",
+        "raw": "24px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n400-line",
+        "raw": "26px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--type-n400-weight",
+        "raw": "900",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--snackbar-text-top",
+        "raw": "18px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--snackbar-text-bottom",
+        "raw": "19px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--badge-counter-line",
+        "raw": "8px",
+        "source": "src/styles.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--radius",
+        "raw": "0px",
+        "source": "src/styles.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--shadow-30",
+        "raw": "0 0 12px color-mix(in srgb, var(--c2110) 10%, transparent)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--shadow-30-bottom",
+        "raw": "0 4px 12px color-mix(in srgb, var(--c2110) 10%, transparent)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--shadow-glow",
+        "raw": "0 0 200px color-mix(in srgb, var(--c2010) 30%, transparent), 0 2px 4px color-mix(in srgb, var(--c2110) 30%, transparent), 0 4px 30px 10px color-mix(in srgb, var(--c2010) 15%, transparent)",
+        "source": "src/styles.css"
+      }
+    ],
+    "other": [
+      {
+        "name": "--weight-bold",
+        "raw": "700",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--skeleton-box-height",
+        "raw": "38px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--table-header-height",
+        "raw": "34px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--table-row-height",
+        "raw": "52px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--scrim",
+        "raw": "color-mix(in srgb, var(--c2110) 20%, transparent)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--disabled-inverse",
+        "raw": "color-mix(in srgb, var(--c2010) 40%, transparent)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--link-underline-inverse",
+        "raw": "color-mix(in srgb, var(--c2010) 90%, transparent)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--link-underline-offset",
+        "raw": "calc(0.2em + 3px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s10",
+        "raw": "5px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s20",
+        "raw": "10px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s30",
+        "raw": "15px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s40",
+        "raw": "20px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s50",
+        "raw": "25px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s60",
+        "raw": "30px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s70",
+        "raw": "35px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s80",
+        "raw": "40px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s90",
+        "raw": "60px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--s110",
+        "raw": "120px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d10",
+        "raw": "5px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d20",
+        "raw": "10px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d30",
+        "raw": "15px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d40",
+        "raw": "20px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d50",
+        "raw": "25px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d60",
+        "raw": "30px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d70",
+        "raw": "35px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d80",
+        "raw": "40px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d90",
+        "raw": "50px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d100",
+        "raw": "70px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--d110",
+        "raw": "90px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--n1",
+        "raw": "1px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--n2",
+        "raw": "2px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--n4",
+        "raw": "4px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--n12",
+        "raw": "12px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--n16",
+        "raw": "16px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--r1",
+        "raw": "1px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--r2",
+        "raw": "2px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--r4",
+        "raw": "4px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--r8",
+        "raw": "8px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--r16",
+        "raw": "16px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--rfull",
+        "raw": "999px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--icon-default",
+        "raw": "20px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--icon-large",
+        "raw": "32px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--grid-max-width",
+        "raw": "1474px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--grid-columns",
+        "raw": "4",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--duration-fast",
+        "raw": "150ms",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--duration-base",
+        "raw": "300ms",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--easing",
+        "raw": "cubic-bezier(0.2, 0, 0, 1)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--focus-offset",
+        "raw": "0px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--snackbar-max-width",
+        "raw": "640px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--snackbar-min-height",
+        "raw": "70px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--tooltip-max-width",
+        "raw": "260px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--floating-caret-width",
+        "raw": "13px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--floating-caret-height",
+        "raw": "6px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--toast-max-height",
+        "raw": "900px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--toast-scroll-max-height",
+        "raw": "758px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--toast-icon-size",
+        "raw": "60px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--badge-counter-size",
+        "raw": "13px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--badge-min-size",
+        "raw": "18px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--breakpoint-xs",
+        "raw": "0px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--breakpoint-sm",
+        "raw": "575px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--breakpoint-md",
+        "raw": "991px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--breakpoint-lg",
+        "raw": "1118px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--breakpoint-xl",
+        "raw": "1442px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--breakpoint-xxl",
+        "raw": "1676px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--button-min-height",
+        "raw": "60px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--button-min-width",
+        "raw": "100%",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--button-min-width-desktop",
+        "raw": "160px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--button-link-min-height",
+        "raw": "60px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--loader-square-small-size",
+        "raw": "16px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--loader-square-large-size",
+        "raw": "32px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--loader-square-duration",
+        "raw": "calc(var(--duration-base) * 3)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--loader-square-easing",
+        "raw": "cubic-bezier(0.42, 0, 0.58, 1)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--icon-button-hit",
+        "raw": "50px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--icon-button-inner-default",
+        "raw": "40px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--icon-button-inner-large",
+        "raw": "46px",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--icon-button-hover-default",
+        "raw": "1.2",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--icon-button-pressed-default",
+        "raw": "0.9",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--icon-button-hover-large",
+        "raw": "1.125",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--icon-button-pressed-large",
+        "raw": "0.875",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--action-inverse-opacity-disabled",
+        "raw": "0.4",
+        "source": "src/styles.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Input",
+      "file": "src/components/input",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "default",
+            "danger"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "helperText",
+          "type": "any"
+        },
+        {
+          "name": "error",
+          "type": "any"
+        },
+        {
+          "name": "prefix",
+          "type": "any"
+        },
+        {
+          "name": "suffix",
+          "type": "any"
+        },
+        {
+          "name": "icon",
+          "type": "any"
+        },
+        {
+          "name": "showCharacterCount",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "maskHint",
+          "type": "string"
+        },
+        {
+          "name": "inputClassName",
+          "type": "string"
+        }
+      ],
+      "usage": "Use native single-line entry with a persistent associated label. Actual value, focus, disabled/readOnly and application error determine the selected Figma states.",
+      "examples": [
+        {
+          "label": "Payment message",
+          "code": "\u003cInput label=\"Mitteilung\" name=\"message\" value={message} onChange={e =\u003e setMessage(e.target.value)} maxLength={120} showCharacterCount helperText=\"Verwendungszweck\" error={errors.message} /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not substitute a placeholder for the label or force interaction states through styling props.",
+        "Do not invent colors, automatic validation or masking; decorative affixes and icons are not actions."
+      ]
+    },
+    {
+      "name": "Icon",
+      "file": "src/components/icon",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "20",
+            "32"
+          ],
+          "default": "20"
+        },
+        {
+          "name": "name",
+          "type": "any",
+          "required": true
+        }
+      ],
+      "usage": "Use for the curated Raiffeisen icon vocabulary, as decorative support for a label or inside an accessible control. Icons inherit the surrounding semantic color.",
+      "examples": [
+        {
+          "label": "Confirmation status",
+          "code": "import { Icon } from '@/design-system/{slug}';\n\u003cspan className=\"inline-flex items-center gap-s20 text-success\"\u003e\u003cIcon name=\"check\" /\u003ePayment confirmed\u003c/span\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use an icon outside the curated IconName set.",
+        "Do not use an icon-only control without an accessible parent label.",
+        "Do not use arbitrary icon sizes or hardcoded colors."
+      ]
+    },
+    {
+      "name": "Button",
+      "file": "src/components/button",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "primary",
+            "secondary",
+            "link"
+          ],
+          "default": "primary"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "type": "enum",
+          "values": [
+            "button",
+            "submit",
+            "reset"
+          ],
+          "default": "button"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "any"
+        },
+        {
+          "name": "form",
+          "type": "string"
+        },
+        {
+          "name": "formAction",
+          "type": "string"
+        },
+        {
+          "name": "formEncType",
+          "type": "string"
+        },
+        {
+          "name": "formMethod",
+          "type": "string"
+        },
+        {
+          "name": "formNoValidate",
+          "type": "boolean"
+        },
+        {
+          "name": "formTarget",
+          "type": "string"
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "isLoading",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "iconLeft",
+          "type": "any"
+        },
+        {
+          "name": "iconRight",
+          "type": "any"
+        },
+        {
+          "name": "badge",
+          "type": "any"
+        },
+        {
+          "name": "href",
+          "type": "string"
+        },
+        {
+          "name": "target",
+          "type": "string"
+        },
+        {
+          "name": "rel",
+          "type": "string"
+        },
+        {
+          "name": "download",
+          "type": "any"
+        },
+        {
+          "name": "hrefLang",
+          "type": "string"
+        },
+        {
+          "name": "onClick",
+          "type": "any"
+        }
+      ],
+      "usage": "Use Primary for the main action, Secondary for supporting negative actions, and Link for less prominent actions. Set href for navigation and isLoading for non-blocking local processing.",
+      "examples": [
+        {
+          "label": "Save and cancel",
+          "code": "\u003cButton onClick={save} isLoading={saving}\u003eSpeichern\u003c/Button\u003e\n\u003cButton variant=\"secondary\" onClick={cancel}\u003eAbbrechen\u003c/Button\u003e"
+        },
+        {
+          "label": "Navigation",
+          "code": "\u003cButton variant=\"link\" href=\"/accounts\"\u003eKonten anzeigen\u003c/Button\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Never use Primary on black or red backgrounds; use inverted Secondary or Link.",
+        "Do not use Secondary alone for a positive action.",
+        "Do not use isLoading for blocking processes or on red backgrounds.",
+        "Do not replace the application live-region progress and result feedback with a loading button."
+      ]
+    },
+    {
+      "name": "Logo",
+      "file": "src/components/logo",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "default",
+            "large"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "decorative",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use the verbatim Raiffeisen wordmark to identify the brand in headers, footers and sign-in screens. Two token-backed heights; named for assistive technology unless decorative next to text that already names the brand.",
+      "examples": [
+        {
+          "label": "Header brand link",
+          "code": "\u003ca href=\"/\" aria-label=\"Raiffeisen — home\"\u003e\u003cLogo /\u003e\u003c/a\u003e"
+        },
+        {
+          "label": "Footer, decorative",
+          "code": "\u003cLogo size=\"large\" decorative /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not recolor, stretch, crop or redraw the wordmark, and do not recreate it with text or a generated image.",
+        "Do not place it on colored or inverted surfaces or use it as a loading indicator or inside buttons."
+      ]
+    },
+    {
+      "name": "LoaderSquare",
+      "file": "src/components/loader-square",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "small",
+            "large"
+          ],
+          "default": "large"
+        },
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "neutral",
+            "brand"
+          ],
+          "default": "neutral"
+        },
+        {
+          "name": "animated",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use small for elements or large for empty pages without a skeleton. Animated neutral loaders loop between static and reference shapes with system motion tokens; Button loading composes the animated small neutral loader with a reduced-motion static fallback.",
+      "examples": [
+        {
+          "label": "Element loading",
+          "code": "\u003cLoaderSquare size=\"small\" animated /\u003e"
+        },
+        {
+          "label": "Empty page loading",
+          "code": "\u003cLoaderSquare size=\"large\" animated /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not add a loader where a skeleton already represents the same pending content.",
+        "Do not introduce custom timings, animate Brand or override reduced-motion preferences.",
+        "Do not replace application-owned busy state and announcements with this decorative loader."
+      ]
+    },
+    {
+      "name": "Badge",
+      "file": "src/components/badge",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "counter",
+            "dot"
+          ],
+          "default": "counter"
+        },
+        {
+          "name": "count",
+          "type": "number"
+        }
+      ],
+      "usage": "Use counter (default) for non-negative counts, capped at 99+, or dot for the selected numberless new/unread indicator. Both work alone or in Button's badge slot. Provide accessible count or indicator context.",
+      "examples": [
+        {
+          "label": "Button counter",
+          "code": "\u003cButton badge={\u003cBadge count={125} aria-label=\"125 ungelesene Nachrichten\" /\u003e} onClick={openMessages}\u003eNachrichten\u003c/Button\u003e"
+        },
+        {
+          "label": "Numberless badge",
+          "code": "\u003cButton badge={\u003cBadge variant=\"dot\" aria-label=\"Neue Nachrichten\" /\u003e}\u003ePostfach\u003c/Button\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not make Badge an interactive control or nest actions inside it.",
+        "Do not invent colors or variants beyond counter and dot.",
+        "Do not use badge typography as a general text style.",
+        "Do not communicate the dot's meaning by color alone; add accessible context."
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "file": "src/components/skeleton",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "text",
+            "box"
+          ],
+          "default": "box"
+        },
+        {
+          "name": "isLoading",
+          "type": "boolean",
+          "default": "true"
+        }
+      ],
+      "usage": "Use static neutral text or box placeholders while content loads, then reveal children with isLoading=false. Match the pending content layout and provide one containing busy region and separate status announcement.",
+      "examples": [
+        {
+          "label": "Account loading",
+          "code": "\u003cdiv aria-busy={loading} className=\"flex flex-col gap-s40\"\u003e\u003cSkeleton variant=\"text\" isLoading={loading}\u003e{account.name}\u003c/Skeleton\u003e\u003cSkeleton isLoading={loading}\u003e{account.balance}\u003c/Skeleton\u003e\u003c/div\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not add a Small Loader to content already represented by a skeleton.",
+        "Do not add undocumented shimmer, pulse, timings or annotation colors.",
+        "Do not leave pending interactive content mounted inside a placeholder.",
+        "Do not announce each placeholder or treat errors as endless loading."
+      ]
+    },
+    {
+      "name": "IconButton",
+      "file": "src/components/icon-button",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "20",
+            "32"
+          ],
+          "default": "20"
+        },
+        {
+          "name": "icon",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use for an icon-only action with a short accessible label. Choose the default or large icon while retaining the stable touch target.",
+      "examples": [
+        {
+          "label": "Download a document",
+          "code": "\u003cIconButton icon=\"download\" label=\"Dokument herunterladen\" onClick={downloadDocument} /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Never omit the label or use a generic label unrelated to the action.",
+        "Do not introduce arbitrary icon sizes or unapproved icons.",
+        "Do not use a clickable div or add a filled background."
+      ]
+    },
+    {
+      "name": "Link",
+      "file": "src/components/link",
+      "import_path": "",
+      "props": [
+        {
+          "name": "href",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "external",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "download",
+          "type": "any"
+        },
+        {
+          "name": "newTab",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use for inline navigation to a meaningful destination, preserving native anchor browser behavior. Typography is inherited and the underline always remains visible; external destinations stay in the same tab unless newTab is explicitly justified.",
+      "examples": [
+        {
+          "label": "Inline navigation",
+          "code": "import { Link } from '@/design-system/{slug}';\n\u003cp\u003ePrüfen Sie Ihre \u003cLink href=\"/accounts\"\u003eKonten\u003c/Link\u003e.\u003c/p\u003e"
+        },
+        {
+          "label": "Explicit new tab",
+          "code": "\u003cLink href=\"https://www.raiffeisen.ch\" external newTab\u003eRaiffeisen Schweiz\u003c/Link\u003e"
+        },
+        {
+          "label": "Document download",
+          "code": "\u003cLink href=\"/annual-report.pdf\" download\u003eJahresbericht (PDF)\u003c/Link\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Never use Link for Save, Submit, Continue or Delete actions; use Button.",
+        "Do not use generic destination labels such as Hier klicken.",
+        "Do not force external links into new tabs automatically.",
+        "Do not remove the underline or add color variants.",
+        "Do not override wrapped-link line spacing: it reserves n4 underline thickness plus s10 clearance in every state to prevent hover overlap.",
+        "Do not stack links with bare line breaks or directly after a paragraph; use separate paragraphs with the canonical s40 spacing.",
+        "Do not duplicate destinations inside an already interactive container or conflict with row selection.",
+        "Do not introduce unexpected downloads or app switches without communicating the outcome."
+      ]
+    },
+    {
+      "name": "ButtonSet",
+      "file": "src/components/button-set",
+      "import_path": "",
+      "props": [
+        {
+          "name": "type",
+          "type": "enum",
+          "values": [
+            "buttons",
+            "links",
+            "icon-buttons",
+            "icon-links"
+          ],
+          "default": "buttons"
+        },
+        {
+          "name": "align",
+          "type": "enum",
+          "values": [
+            "left",
+            "center"
+          ],
+          "default": "left"
+        },
+        {
+          "name": "toolbar",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Group closely related decisions with built-in responsive spacing and hierarchy. Choose buttons, links, icon-buttons or icon-links; use toolbar only for one named function requiring roving arrow-key focus.",
+      "examples": [
+        {
+          "label": "Related decisions",
+          "code": "\u003cButtonSet\u003e\u003cButton onClick={save}\u003eSpeichern\u003c/Button\u003e\u003cButton variant=\"secondary\" onClick={cancel}\u003eAbbrechen\u003c/Button\u003e\u003cLink href=\"/help\"\u003eHilfe\u003c/Link\u003e\u003c/ButtonSet\u003e"
+        },
+        {
+          "label": "Named toolbar",
+          "code": "\u003cButtonSet type=\"icon-buttons\" toolbar aria-label=\"Dokumentwerkzeuge\"\u003e\u003cIconButton icon=\"copy\" label=\"Kopieren\" onClick={copy} /\u003e\u003cIconButton icon=\"edit\" label=\"Bearbeiten\" onClick={edit} /\u003e\u003c/ButtonSet\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not group independent actions or overload a decision group.",
+        "Never use more than one primary per set.",
+        "Secondary requires a primary unless there are exactly two equally weighted secondary buttons.",
+        "Do not use CSS ordering that disagrees with keyboard order.",
+        "Do not use toolbar without an accessible name or for unrelated functions.",
+        "Do not override built-in spacing or shrink the icon hit areas."
+      ]
+    },
+    {
+      "name": "BarChart",
+      "file": "src/components/bar-chart",
+      "import_path": "",
+      "props": [
+        {
+          "name": "data",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "max",
+          "type": "number"
+        }
+      ],
+      "usage": "Use for up to seven horizontal CHF progress rows with ordered chart colors and optional signed percentage trends. Labels and unsigned amounts use default text; only signed changes use trend text colors. Provide a meaningful title; a hidden table mirrors every label, amount and trend.",
+      "examples": [
+        {
+          "label": "Account progress",
+          "code": "\u003cBarChart title=\"Kontostände\" max={2000} data={[{ label: 'Sparkonto', amount: 1234.5, trend: 3.7 }]} /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Never use danger in graphics; negatives use trend-negative.",
+        "Do not exceed seven series or manually reorder palette colors.",
+        "Do not hide visible values or remove the equivalent data table.",
+        "Do not add gridlines, rounded bars or shadows."
+      ]
+    },
+    {
+      "name": "Legend",
+      "file": "src/components/legend",
+      "import_path": "",
+      "props": [
+        {
+          "name": "data",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "withAmount",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use alongside a chart with the same ordered data. Set withAmount to show CHF amounts beneath each label; omit it for a compact wrapping key. Labels and unsigned amounts use default text, not positive-trend green.",
+      "examples": [
+        {
+          "label": "Chart and key",
+          "code": "\u003cBarChart title=\"Kontostände\" data={accounts} /\u003e\n\u003cLegend data={accounts} withAmount aria-label=\"Kontokategorien\" /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use a different series order from the chart.",
+        "Do not exceed seven series or substitute arbitrary swatch colors.",
+        "Do not convey categories solely through color."
+      ]
+    },
+    {
+      "name": "StockChart",
+      "file": "src/components/stock-chart",
+      "import_path": "",
+      "props": [
+        {
+          "name": "name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "market",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "change",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "reference",
+          "type": "number"
+        },
+        {
+          "name": "ticks",
+          "type": "any"
+        }
+      ],
+      "usage": "Use for a compact intraday quote card: instrument name, optional market, formatted value, signed percentage change and a line graph colored by the change's sign, with optional dashed reference value and end dot. Hovering the line shows the point's time and value in a Popover-styled tooltip. A hidden table mirrors every time and value.",
+      "examples": [
+        {
+          "label": "Index card",
+          "code": "\u003cStockChart name=\"DAX\" market=\"Schweiz\" value=\"0.9606\" change={0.11} date=\"26.08.2025\" data={quotes} reference={previousClose} ticks={['08:00','12:00','18:00']} /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Never use danger for the line; negatives use trend-negative.",
+        "Do not pass custom line colors; the sign of change decides.",
+        "Do not add gridlines, area fills, shadows or animations.",
+        "Do not show the change without its sign."
+      ]
+    },
+    {
+      "name": "Snackbar",
+      "file": "src/components/snackbar",
+      "import_path": "",
+      "props": [
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "onOpenChange",
+          "type": "function"
+        },
+        {
+          "name": "dismissLabel",
+          "type": "string",
+          "default": "Mitteilung schließen"
+        },
+        {
+          "name": "action",
+          "type": "any"
+        }
+      ],
+      "usage": "Use for brief, non-blocking outcomes with a polite text announcement and optional dismissal. The application owns visibility and placement.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cSnackbar open={visible} onOpenChange={setVisible}\u003eÄnderungen gespeichert\u003c/Snackbar\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for blocking or critical decisions.",
+        "Do not put action controls in the announcement or invent expiry durations."
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "file": "src/components/tooltip",
+      "import_path": "",
+      "props": [
+        {
+          "name": "trigger",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "open",
+          "type": "boolean"
+        },
+        {
+          "name": "defaultOpen",
+          "type": "boolean"
+        },
+        {
+          "name": "onOpenChange",
+          "type": "function"
+        }
+      ],
+      "usage": "Use for supplementary non-interactive text available on hover and keyboard focus; supply an accessible ref-forwarding trigger.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cTooltip trigger={\u003cIconButton icon=\"copy\" label=\"IBAN kopieren\" /\u003e}\u003eIBAN kopieren\u003c/Tooltip\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Never put interactive content or essential instructions inside.",
+        "Never use a tooltip as the only accessible label."
+      ]
+    },
+    {
+      "name": "Popover",
+      "file": "src/components/popover",
+      "import_path": "",
+      "props": [
+        {
+          "name": "trigger",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "open",
+          "type": "boolean"
+        },
+        {
+          "name": "defaultOpen",
+          "type": "boolean"
+        },
+        {
+          "name": "onOpenChange",
+          "type": "function"
+        }
+      ],
+      "usage": "Use for named supplementary content anchored to a control, with keyboard focus, dismissal and restoration managed by Radix.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cPopover label=\"Zahlungsdetails\" trigger={\u003cButton variant=\"link\"\u003eDetails anzeigen\u003c/Button\u003e}\u003e\u003cp\u003eZahlungsinformationen\u003c/p\u003e\u003c/Popover\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not omit the dialog label.",
+        "Do not use for blocking decisions or arbitrary visual variants."
+      ]
+    },
+    {
+      "name": "Toast",
+      "file": "src/components/toast",
+      "import_path": "",
+      "props": [
+        {
+          "name": "title",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "icon",
+          "type": "any",
+          "default": "check"
+        },
+        {
+          "name": "actions",
+          "type": "any"
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "onOpenChange",
+          "type": "function"
+        },
+        {
+          "name": "dismissLabel",
+          "type": "string",
+          "default": "Mitteilung schließen"
+        }
+      ],
+      "usage": "Use the selected inverse notification for richer non-blocking feedback. Keep priority order at every viewport: Secondary before tertiary Link in DOM, visual and Tab order. On XS, stack the full-width Secondary above the centered Link with s40 spacing; from SM upward, use a left-aligned horizontal wrapping row with vertically centered controls and s40 spacing.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cToast title=\"Zahlung eingerichtet\" actions={\u003cButton inverted variant=\"secondary\" onClick={acknowledge}\u003eOK\u003c/Button\u003e}\u003eAb morgen wird automatisch investiert.\u003c/Toast\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Never place Primary on the inverse surface.",
+        "Do not steal focus or invent timed dismissal.",
+        "Do not substitute arbitrary icons, colors or rounded buttons.",
+        "Never reverse priority on mobile: Secondary precedes tertiary Link at every viewport, with matching visual and Tab order."
+      ]
+    },
+    {
+      "name": "Alert",
+      "file": "src/components/alert",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "info",
+            "success",
+            "warning",
+            "danger"
+          ],
+          "default": "success"
+        },
+        {
+          "name": "title",
+          "type": "any"
+        },
+        {
+          "name": "action",
+          "type": "any"
+        },
+        {
+          "name": "iconAction",
+          "type": "any"
+        }
+      ],
+      "usage": "Use info, success, warning or danger in-page messages on bg-page with the matching semantic n4 border and standard-bold title. Title/body are independently optional; action composes a link-style Button and iconAction a named IconButton.",
+      "examples": [
+        {
+          "label": "Save outcome",
+          "code": "\u003cAlert variant=\"success\" title=\"Änderungen gespeichert\"\u003eIhre Kontoeinstellungen wurden aktualisiert.\u003c/Alert\u003e"
+        },
+        {
+          "label": "Error recovery",
+          "code": "\u003cAlert variant=\"warning\" title=\"Bitte prüfen Sie Ihre Angaben\" action={\u003cButton variant=\"link\" onClick={retry}\u003eErneut versuchen\u003c/Button\u003e}\u003eBitte prüfen Sie Ihre Angaben.\u003c/Alert\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Never use trend-negative instead of UI danger.",
+        "Do not tint the white master surface or body text, add decorative severity icons or shadows, or assume the optional icon control means dismissal.",
+        "Do not move focus or automatically dismiss important feedback.",
+        "Do not convey status through color alone."
+      ]
+    },
+    {
+      "name": "Table",
+      "file": "src/components/table",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "caption",
+          "type": "any"
+        }
+      ],
+      "usage": "Use for native non-stacked tabular data with an accessible label and keyboard-scrollable overflow.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cTable label=\"Kontostände\"\u003e\u003cTableBody\u003e\u003cTableRow\u003e\u003cTableCell\u003ePrivatkonto\u003c/TableCell\u003e\u003c/TableRow\u003e\u003c/TableBody\u003e\u003c/Table\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not turn the table into independently rendered columns or clickable rows."
+      ]
+    },
+    {
+      "name": "TableHeader",
+      "file": "src/components/table",
+      "import_path": "",
+      "usage": "Group native column-heading rows.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cTableHeader\u003e\u003cTableRow\u003e\u003cTableHead\u003eKonto\u003c/TableHead\u003e\u003c/TableRow\u003e\u003c/TableHeader\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use ordinary cells instead of column headings."
+      ]
+    },
+    {
+      "name": "TableBody",
+      "file": "src/components/table",
+      "import_path": "",
+      "usage": "Group the native data rows.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cTableBody\u003e\u003cTableRow\u003e\u003cTableCell\u003ePrivatkonto\u003c/TableCell\u003e\u003c/TableRow\u003e\u003c/TableBody\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not put div elements directly inside table sections."
+      ]
+    },
+    {
+      "name": "TableFooter",
+      "file": "src/components/table",
+      "import_path": "",
+      "usage": "Use an optional native footer for summary rows.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cTableFooter\u003e\u003cTableRow\u003e\u003cTableCell\u003eTotal\u003c/TableCell\u003e\u003c/TableRow\u003e\u003c/TableFooter\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not invent footer color treatments."
+      ]
+    },
+    {
+      "name": "TableRow",
+      "file": "src/components/table",
+      "import_path": "",
+      "usage": "Compose one native data or heading row.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cTableRow\u003e\u003cTableCell\u003ePrivatkonto\u003c/TableCell\u003e\u003cTableCell variant=\"numeric\"\u003e4'250.00\u003c/TableCell\u003e\u003c/TableRow\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not make the row a substitute button or link."
+      ]
+    },
+    {
+      "name": "TableHead",
+      "file": "src/components/table",
+      "import_path": "",
+      "props": [
+        {
+          "name": "align",
+          "type": "enum",
+          "values": [
+            "left",
+            "right",
+            "center"
+          ],
+          "default": "left"
+        }
+      ],
+      "usage": "Use native scope-aware headings; alignment is left, right or center.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cTableHead align=\"right\"\u003eSaldo\u003c/TableHead\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not omit accessible headings for action columns."
+      ]
+    },
+    {
+      "name": "TableCell",
+      "file": "src/components/table",
+      "import_path": "",
+      "props": [
+        {
+          "name": "align",
+          "type": "enum",
+          "values": [
+            "left",
+            "right",
+            "center"
+          ],
+          "default": "left"
+        },
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "text",
+            "numeric",
+            "actions"
+          ],
+          "default": "text"
+        }
+      ],
+      "usage": "Use text, numeric or actions cells. Numeric defaults right and actions preserve existing IconButton targets.",
+      "examples": [
+        {
+          "label": "Typical usage",
+          "code": "\u003cTableCell variant=\"actions\"\u003e\u003cIconButton icon=\"option-vertical\" label=\"Aktionen für Privatkonto\" /\u003e\u003c/TableCell\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use bare clickable icons, custom colors or curved amount separators."
+      ]
+    },
+    {
+      "name": "Accordion",
+      "file": "src/components/accordion",
+      "import_path": "",
+      "props": [
+        {
+          "name": "type",
+          "type": "enum",
+          "values": [
+            "single",
+            "multiple"
+          ],
+          "default": "single"
+        },
+        {
+          "name": "value",
+          "type": "any"
+        },
+        {
+          "name": "defaultValue",
+          "type": "any"
+        },
+        {
+          "name": "onValueChange",
+          "type": "function"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "dir",
+          "type": "enum",
+          "values": [
+            "ltr",
+            "rtl"
+          ]
+        }
+      ],
+      "usage": "Group expandable content in the selected responsive Figma width. Single is collapsible by default; multiple supports independent panels. Controlled and initial values are arrays.",
+      "examples": [
+        {
+          "label": "FAQ",
+          "code": "\u003cAccordion defaultValue={['cost']}\u003e\u003cAccordionItem value='cost'\u003e\u003cAccordionTrigger\u003eKartenkosten\u003c/AccordionTrigger\u003e\u003cAccordionContent\u003eDie Kosten hängen von der Karte ab.\u003c/AccordionContent\u003e\u003c/AccordionItem\u003e\u003c/Accordion\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not narrow the root twice inside a pre-narrowed column.",
+        "Do not add undocumented animation or card styling."
+      ]
+    },
+    {
+      "name": "AccordionItem",
+      "file": "src/components/accordion",
+      "import_path": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        }
+      ],
+      "usage": "Compose one uniquely identified expandable section inside Accordion.",
+      "examples": [
+        {
+          "label": "Named section",
+          "code": "\u003cAccordionItem value='cost'\u003e\u003cAccordionTrigger\u003eKartenkosten\u003c/AccordionTrigger\u003e\u003cAccordionContent\u003eInformationen\u003c/AccordionContent\u003e\u003c/AccordionItem\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Never reuse an item value in the same root.",
+        "Do not put items outside Accordion."
+      ]
+    },
+    {
+      "name": "AccordionTrigger",
+      "file": "src/components/accordion",
+      "import_path": "",
+      "props": [
+        {
+          "name": "headingLevel",
+          "type": "any",
+          "default": "3"
+        }
+      ],
+      "usage": "Use a descriptive full-width native header button with a decorative chevron. Set headingLevel to match the document hierarchy.",
+      "examples": [
+        {
+          "label": "Heading",
+          "code": "\u003cAccordionTrigger headingLevel={3}\u003eWas kostet eine Kreditkarte?\u003c/AccordionTrigger\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not nest links or buttons in the trigger.",
+        "Never leave the trigger label empty."
+      ]
+    },
+    {
+      "name": "AccordionContent",
+      "file": "src/components/accordion",
+      "import_path": "",
+      "props": [
+        {
+          "name": "children",
+          "type": "any"
+        }
+      ],
+      "usage": "Place explanatory content and real navigation within the associated panel. Closed content is removed from keyboard navigation.",
+      "examples": [
+        {
+          "label": "Navigation",
+          "code": "\u003cAccordionContent\u003e\u003cp\u003eVergleichen Sie die Karten.\u003c/p\u003e\u003cp\u003e\u003cLink href='/cards'\u003eKreditkarten vergleichen\u003c/Link\u003e\u003c/p\u003e\u003c/AccordionContent\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not force hidden interactive content to remain focusable.",
+        "Do not remove the token-backed content insets."
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "file": "src/assets/fonts/FrutigerNextforRB-Bold.woff2",
+      "kind": "font",
+      "format": "woff2"
+    },
+    {
+      "file": "src/assets/fonts/FrutigerNextforRB-Heavy.woff2",
+      "kind": "font",
+      "format": "woff2"
+    },
+    {
+      "file": "src/assets/fonts/FrutigerNextforRB-Medium.woff2",
+      "kind": "font",
+      "format": "woff2"
+    },
+    {
+      "file": "src/assets/fonts/FrutigerNextforRB-Regular.woff2",
+      "kind": "font",
+      "format": "woff2"
+    },
+    {
+      "file": "src/assets/logos/raiffeisen-logo.svg",
+      "kind": "logo",
+      "format": "svg"
+    }
+  ]
+}
