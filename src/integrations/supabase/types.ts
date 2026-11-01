@@ -14,13 +14,72 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      idea_likes: {
+        Row: {
+          created_at: string
+          idea_id: string
+          voter_id: string
+        }
+        Insert: {
+          created_at?: string
+          idea_id: string
+          voter_id: string
+        }
+        Update: {
+          created_at?: string
+          idea_id?: string
+          voter_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "idea_likes_idea_id_fkey"
+            columns: ["idea_id"]
+            isOneToOne: false
+            referencedRelation: "ideas"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      ideas: {
+        Row: {
+          author_name: string
+          category: string
+          created_at: string
+          description: string
+          id: string
+          like_count: number
+          title: string
+        }
+        Insert: {
+          author_name: string
+          category: string
+          created_at?: string
+          description: string
+          id?: string
+          like_count?: number
+          title: string
+        }
+        Update: {
+          author_name?: string
+          category?: string
+          created_at?: string
+          description?: string
+          id?: string
+          like_count?: number
+          title?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      my_likes: { Args: { _voter_id: string }; Returns: string[] }
+      toggle_like: {
+        Args: { _idea_id: string; _voter_id: string }
+        Returns: boolean
+      }
     }
     Enums: {
       [_ in never]: never
