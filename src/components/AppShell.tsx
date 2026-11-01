@@ -27,9 +27,8 @@ export function AppShell({ children }: { children: ReactNode }) {
     <div className="min-h-screen bg-page text-default font-brand">
       <header className="border-b border-default">
         <div className="container flex items-center justify-between gap-s40 py-s40">
-          <RouterLink to="/" className="flex items-center gap-s30">
+          <RouterLink to="/" aria-label="Ideen-Board Startseite">
             <Logo decorative />
-            <span className="hidden text-navigation-bold sm:inline">Ideen-Board · Vibe Code PoC</span>
           </RouterLink>
           <nav className="hidden gap-s50 text-navigation md:flex" aria-label="Hauptnavigation">
             {links}
