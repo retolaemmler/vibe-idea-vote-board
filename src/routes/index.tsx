@@ -59,7 +59,7 @@ function Dashboard() {
         </section>
         <section className="flex flex-col gap-s50">
           <h2 className="text-t200">Nach Kategorie</h2>
-          <Table>
+          <Table label="Ideen pro Kategorie">
             <TableHeader>
               <TableRow>
                 <TableHead>Kategorie</TableHead>
