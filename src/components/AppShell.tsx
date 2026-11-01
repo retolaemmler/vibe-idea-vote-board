@@ -65,7 +65,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </header>
       <main className="container flex-1 py-d80">{children}</main>
       <footer className="inverted bg-inverse text-inverse">
-        <div className="container flex flex-col gap-d60 py-d80">
+        <div className="container flex flex-col items-start gap-d60 py-d80">
           <Logo />
           <nav className="flex flex-wrap gap-s50 text-standard" aria-label="Fussnavigation">
             <Link href="/">Dashboard</Link>
