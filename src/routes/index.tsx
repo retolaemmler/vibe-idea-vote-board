@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { z } from "zod";
 import {
   Button, ButtonSet, Skeleton, Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from "@/design-system/raiffeisen-design-system-7de3c4";
@@ -7,7 +8,10 @@ import { IdeaCard } from "@/components/IdeaCard";
 import { useIdeas } from "@/hooks/use-ideas";
 import { CATEGORIES } from "@/lib/ideas";
 
+const search = z.object({ kategorie: z.string().optional(), sort: z.enum(["likes", "neu"]).optional() });
+
 export const Route = createFileRoute("/")({
+  validateSearch: (s) => search.parse(s),
   head: () => ({
     meta: [
       { title: "Dashboard – Ideen-Board Vibe Code PoC" },
@@ -22,8 +26,12 @@ export const Route = createFileRoute("/")({
 });
 
 function Dashboard() {
+  const { kategorie, sort = "likes" } = Route.useSearch();
+  const navigate = useNavigate({ from: "/" });
   const { ideas, likedIds } = useIdeas();
   const list = ideas.data ?? [];
+  let all = list.filter((i) => !kategorie || i.category === kategorie);
+  if (sort === "neu") all = [...all].sort((a, b) => b.created_at.localeCompare(a.created_at));
   const top = list.filter((i) => i.like_count > 0).slice(0, 5);
   const totalLikes = list.reduce((s, i) => s + i.like_count, 0);
 
@@ -36,7 +44,6 @@ function Dashboard() {
         </p>
         <ButtonSet>
           <Button href="/ideen/neu">Idee erfassen</Button>
-          <Button variant="link" href="/ideen">Alle Ideen ansehen</Button>
         </ButtonSet>
       </section>
 
@@ -77,6 +84,43 @@ function Dashboard() {
           </Table>
         </section>
       </div>
+
+      <section id="alle-ideen" className="flex flex-col gap-s50 pt-d80" aria-busy={ideas.isLoading}>
+        <h2 className="text-t200">Alle Ideen</h2>
+        <div className="flex flex-wrap gap-s50">
+          <label className="flex flex-col gap-s10 text-small">
+            Kategorie
+            <select
+              className="border-b border-input bg-page py-s20 text-standard-bold"
+              value={kategorie ?? ""}
+              onChange={(e) => navigate({ search: (p) => ({ ...p, kategorie: e.target.value || undefined }), hash: "alle-ideen" })}
+            >
+              <option value="">Alle Kategorien</option>
+              {CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
+            </select>
+          </label>
+          <label className="flex flex-col gap-s10 text-small">
+            Sortierung
+            <select
+              className="border-b border-input bg-page py-s20 text-standard-bold"
+              value={sort}
+              onChange={(e) => navigate({ search: (p) => ({ ...p, sort: e.target.value as "likes" | "neu" }), hash: "alle-ideen" })}
+            >
+              <option value="likes">Meiste Likes</option>
+              <option value="neu">Neueste</option>
+            </select>
+          </label>
+        </div>
+        <div className="grid gap-s50 md:grid-cols-2">
+          {ideas.isLoading ? (
+            <Skeleton variant="box" />
+          ) : all.length === 0 ? (
+            <p className="text-standard text-subtle">Noch keine Ideen in dieser Auswahl.</p>
+          ) : (
+            all.map((idea) => <IdeaCard key={idea.id} idea={idea} liked={likedIds.has(idea.id)} />)
+          )}
+        </div>
+      </section>
     </AppShell>
   );
 }
