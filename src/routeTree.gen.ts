@@ -14,6 +14,7 @@ import { Route as IdeenIndexRouteImport } from './routes/ideen.index'
 import { Route as IdeenNeuRouteImport } from './routes/ideen.neu'
 import { Route as Char91__componentChar93PreviewSplatRouteImport } from './routes/[__component].preview.$'
 import { Route as Char91__mockupChar93PreviewSplatRouteImport } from './routes/[__mockup].preview.$'
+import { Route as IdeenIdBearbeitenRouteImport } from './routes/ideen.$id.bearbeiten'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -42,6 +43,11 @@ const Char91__mockupChar93PreviewSplatRoute =
     path: '/__mockup/preview/$',
     getParentRoute: () => rootRouteImport,
   } as any)
+const IdeenIdBearbeitenRoute = IdeenIdBearbeitenRouteImport.update({
+  id: '/ideen/$id/bearbeiten',
+  path: '/ideen/$id/bearbeiten',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -49,6 +55,7 @@ export interface FileRoutesByFullPath {
   '/ideen/': typeof IdeenIndexRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
+  '/ideen/$id/bearbeiten': typeof IdeenIdBearbeitenRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -56,6 +63,7 @@ export interface FileRoutesByTo {
   '/ideen': typeof IdeenIndexRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
+  '/ideen/$id/bearbeiten': typeof IdeenIdBearbeitenRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -64,6 +72,7 @@ export interface FileRoutesById {
   '/ideen/': typeof IdeenIndexRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
+  '/ideen/$id/bearbeiten': typeof IdeenIdBearbeitenRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -73,6 +82,7 @@ export interface FileRouteTypes {
     | '/ideen/'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
+    | '/ideen/$id/bearbeiten'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -80,6 +90,7 @@ export interface FileRouteTypes {
     | '/ideen'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
+    | '/ideen/$id/bearbeiten'
   id:
     | '__root__'
     | '/'
@@ -87,6 +98,7 @@ export interface FileRouteTypes {
     | '/ideen/'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
+    | '/ideen/$id/bearbeiten'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -95,6 +107,7 @@ export interface RootRouteChildren {
   IdeenIndexRoute: typeof IdeenIndexRoute
   Char91__componentChar93PreviewSplatRoute: typeof Char91__componentChar93PreviewSplatRoute
   Char91__mockupChar93PreviewSplatRoute: typeof Char91__mockupChar93PreviewSplatRoute
+  IdeenIdBearbeitenRoute: typeof IdeenIdBearbeitenRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -134,6 +147,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91__mockupChar93PreviewSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ideen/$id/bearbeiten': {
+      id: '/ideen/$id/bearbeiten'
+      path: '/ideen/$id/bearbeiten'
+      fullPath: '/ideen/$id/bearbeiten'
+      preLoaderRoute: typeof IdeenIdBearbeitenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -144,6 +164,7 @@ const rootRouteChildren: RootRouteChildren = {
   Char91__componentChar93PreviewSplatRoute:
     Char91__componentChar93PreviewSplatRoute,
   Char91__mockupChar93PreviewSplatRoute: Char91__mockupChar93PreviewSplatRoute,
+  IdeenIdBearbeitenRoute: IdeenIdBearbeitenRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

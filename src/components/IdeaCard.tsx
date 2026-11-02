@@ -33,15 +33,20 @@ export function IdeaCard({ idea, liked, rank }: { idea: Idea; liked: boolean; ra
       <p className="text-standard whitespace-pre-line">{idea.description}</p>
       <div className="flex flex-wrap items-center justify-between gap-s40">
         <span className="text-small text-subtle">von {idea.author_name}</span>
-        <Button
-          variant={liked ? "secondary" : "link"}
-          iconLeft={liked ? "check" : undefined}
-          isLoading={toggle.isPending}
-          onClick={() => toggle.mutate()}
-          aria-pressed={liked}
-        >
-          {liked ? "Gefällt mir" : "Liken"}
-        </Button>
+        <div className="flex flex-wrap items-center gap-s40">
+          <Button variant="link" href={`/ideen/${idea.id}/bearbeiten`} aria-label={`«${idea.title}» bearbeiten`}>
+            Bearbeiten
+          </Button>
+          <Button
+            variant={liked ? "secondary" : "link"}
+            iconLeft={liked ? "check" : undefined}
+            isLoading={toggle.isPending}
+            onClick={() => toggle.mutate()}
+            aria-pressed={liked}
+          >
+            {liked ? "Gefällt mir" : "Liken"}
+          </Button>
+        </div>
       </div>
       {toggle.isError && <p className="text-small text-danger">Like konnte nicht gespeichert werden.</p>}
     </article>

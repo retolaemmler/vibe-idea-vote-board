@@ -20,6 +20,7 @@ export const ideaSchema = z.object({
   description: z.string().trim().min(10, "Mindestens 10 Zeichen").max(2000, "Maximal 2000 Zeichen"),
   category: z.enum(CATEGORIES, { message: "Bitte Kategorie wählen" }),
 });
+export type IdeaInput = z.infer<typeof ideaSchema>;
 
 export type Idea = {
   id: string;
