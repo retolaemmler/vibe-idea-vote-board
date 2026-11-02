@@ -30,7 +30,7 @@ function Dashboard() {
   return (
     <AppShell>
       <section className="flex flex-col gap-d40 pb-d80">
-        <h1 className="text-hero200">Unsere besten Ideen</h1>
+        <h1 className="text-hero200">Vibe Code App Ideen</h1>
         <p className="text-large max-w-3xl">
           Erfassen Sie Ihre Idee aus dem Vibe Code PoC Workshop und liken Sie die Vorschläge Ihrer Kolleginnen und Kollegen.
         </p>
