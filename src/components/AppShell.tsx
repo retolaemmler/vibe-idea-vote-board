@@ -4,7 +4,6 @@ import { IconButton, Logo } from "@/design-system/raiffeisen-design-system-7de3c
 
 const NAV = [
   { to: "/", label: "Dashboard", exact: true },
-  { to: "/ideen", label: "Alle Ideen", exact: true },
   { to: "/ideen/neu", label: "Idee erfassen", exact: false },
 ] as const;
 

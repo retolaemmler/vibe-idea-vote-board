@@ -39,7 +39,7 @@ function NewIdea() {
     },
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ["ideas"] });
-      navigate({ to: "/ideen", search: { sort: "neu" } });
+      navigate({ to: "/", search: { sort: "neu" }, hash: "alle-ideen" });
     },
   });
 
@@ -94,7 +94,7 @@ function NewIdea() {
         )}
         <ButtonSet>
           <Button type="submit" isLoading={create.isPending}>Idee speichern</Button>
-          <Button variant="link" href="/ideen">Abbrechen</Button>
+          <Button variant="link" href="/">Abbrechen</Button>
         </ButtonSet>
       </form>
     </AppShell>
