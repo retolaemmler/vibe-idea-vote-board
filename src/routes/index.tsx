@@ -32,7 +32,6 @@ function Dashboard() {
   const list = ideas.data ?? [];
   let all = list.filter((i) => !kategorie || i.category === kategorie);
   if (sort === "neu") all = [...all].sort((a, b) => b.created_at.localeCompare(a.created_at));
-  const top = list.filter((i) => i.like_count > 0).slice(0, 5);
   const totalLikes = list.reduce((s, i) => s + i.like_count, 0);
 
   return (
