@@ -31,7 +31,7 @@ function EditIdea() {
   const [confirming, setConfirming] = useState(false);
   const done = () => {
     qc.invalidateQueries({ queryKey: ["ideas"] });
-    navigate({ to: "/", hash: "alle-ideen" });
+    navigate({ to: "/" });
   };
 
   const save = useMutation({
