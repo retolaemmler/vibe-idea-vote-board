@@ -30,7 +30,7 @@ function NewIdea() {
     },
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ["ideas"] });
-      navigate({ to: "/", search: { sort: "neu" }, hash: "alle-ideen" });
+      navigate({ to: "/", search: { sort: "neu" } });
     },
   });
 
