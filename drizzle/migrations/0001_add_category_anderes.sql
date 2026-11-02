@@ -1,0 +1,2 @@
+ALTER TABLE public.ideas DROP CONSTRAINT IF EXISTS ideas_category_check;
+ALTER TABLE public.ideas ADD CONSTRAINT ideas_category_check CHECK (category IN ('Kundenerlebnis','Prozessautomatisierung','Beratung & Anlage','Kredit & Hypotheken','Zahlungsverkehr','Compliance & Risiko','Mitarbeitende & Zusammenarbeit','Daten & KI','Anderes'));

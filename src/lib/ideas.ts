@@ -11,6 +11,7 @@ export const CATEGORIES = [
   "Compliance & Risiko",
   "Mitarbeitende & Zusammenarbeit",
   "Daten & KI",
+  "Anderes",
 ] as const;
 
 export const ideaSchema = z.object({
