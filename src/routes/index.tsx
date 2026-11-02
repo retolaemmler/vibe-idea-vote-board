@@ -54,14 +54,40 @@ function Dashboard() {
 
       <div className="grid gap-d80 lg:grid-cols-3">
         <section className="flex flex-col gap-s50 lg:col-span-2" aria-busy={ideas.isLoading}>
-          <h2 className="text-t200">Top 5 Ideen</h2>
-          {ideas.isLoading ? (
-            <Skeleton variant="box" />
-          ) : top.length === 0 ? (
-            <p className="text-standard text-subtle">Noch keine Likes – seien Sie die erste Person, die eine Idee bewertet.</p>
-          ) : (
-            top.map((idea, i) => <IdeaCard key={idea.id} idea={idea} rank={i + 1} liked={likedIds.has(idea.id)} />)
-          )}
+          <h2 className="text-t200">Alle Ideen</h2>
+          <div className="flex flex-wrap gap-s50">
+            <label className="flex flex-col gap-s10 text-small">
+              Kategorie
+              <select
+                className="border-b border-input bg-page py-s20 text-standard-bold"
+                value={kategorie ?? ""}
+                onChange={(e) => navigate({ search: (p) => ({ ...p, kategorie: e.target.value || undefined }) })}
+              >
+                <option value="">Alle Kategorien</option>
+                {CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
+              </select>
+            </label>
+            <label className="flex flex-col gap-s10 text-small">
+              Sortierung
+              <select
+                className="border-b border-input bg-page py-s20 text-standard-bold"
+                value={sort}
+                onChange={(e) => navigate({ search: (p) => ({ ...p, sort: e.target.value as "likes" | "neu" }) })}
+              >
+                <option value="likes">Meiste Likes</option>
+                <option value="neu">Neueste</option>
+              </select>
+            </label>
+          </div>
+          <div className="grid gap-s50 sm:grid-cols-2">
+            {ideas.isLoading ? (
+              <Skeleton variant="box" />
+            ) : all.length === 0 ? (
+              <p className="text-standard text-subtle">Noch keine Ideen in dieser Auswahl.</p>
+            ) : (
+              all.map((idea) => <IdeaCard key={idea.id} idea={idea} liked={likedIds.has(idea.id)} />)
+            )}
+          </div>
         </section>
         <section className="flex flex-col gap-s50">
           <h2 className="text-t200">Nach Kategorie</h2>
@@ -83,43 +109,6 @@ function Dashboard() {
           </Table>
         </section>
       </div>
-
-      <section id="alle-ideen" className="flex flex-col gap-s50 pt-d80" aria-busy={ideas.isLoading}>
-        <h2 className="text-t200">Alle Ideen</h2>
-        <div className="flex flex-wrap gap-s50">
-          <label className="flex flex-col gap-s10 text-small">
-            Kategorie
-            <select
-              className="border-b border-input bg-page py-s20 text-standard-bold"
-              value={kategorie ?? ""}
-              onChange={(e) => navigate({ search: (p) => ({ ...p, kategorie: e.target.value || undefined }), hash: "alle-ideen" })}
-            >
-              <option value="">Alle Kategorien</option>
-              {CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
-            </select>
-          </label>
-          <label className="flex flex-col gap-s10 text-small">
-            Sortierung
-            <select
-              className="border-b border-input bg-page py-s20 text-standard-bold"
-              value={sort}
-              onChange={(e) => navigate({ search: (p) => ({ ...p, sort: e.target.value as "likes" | "neu" }), hash: "alle-ideen" })}
-            >
-              <option value="likes">Meiste Likes</option>
-              <option value="neu">Neueste</option>
-            </select>
-          </label>
-        </div>
-        <div className="grid gap-s50 md:grid-cols-2">
-          {ideas.isLoading ? (
-            <Skeleton variant="box" />
-          ) : all.length === 0 ? (
-            <p className="text-standard text-subtle">Noch keine Ideen in dieser Auswahl.</p>
-          ) : (
-            all.map((idea) => <IdeaCard key={idea.id} idea={idea} liked={likedIds.has(idea.id)} />)
-          )}
-        </div>
-      </section>
     </AppShell>
   );
 }
