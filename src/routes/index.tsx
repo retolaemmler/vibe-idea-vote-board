@@ -1,4 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { z } from "zod";
 import {
   Button, ButtonSet, Skeleton, Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
@@ -8,7 +9,14 @@ import { IdeaCard } from "@/components/IdeaCard";
 import { useIdeas } from "@/hooks/use-ideas";
 import { CATEGORIES } from "@/lib/ideas";
 
-const search = z.object({ kategorie: z.string().optional(), sort: z.enum(["likes", "neu"]).optional() });
+const search = z.object({ kategorie: z.string().optional(), sort: z.enum(["zufall", "likes", "neu"]).optional() });
+
+// Stable pseudo-random rank per idea for one page load (survives live refreshes).
+function rank(id: string, seed: number) {
+  let h = seed;
+  for (let i = 0; i < id.length; i++) h = Math.imul(h ^ id.charCodeAt(i), 2654435761);
+  return h >>> 0;
+}
 
 export const Route = createFileRoute("/")({
   validateSearch: (s) => search.parse(s),
@@ -26,12 +34,15 @@ export const Route = createFileRoute("/")({
 });
 
 function Dashboard() {
-  const { kategorie, sort = "likes" } = Route.useSearch();
+  const { kategorie, sort = "zufall" } = Route.useSearch();
+  const [seed, setSeed] = useState(0);
+  useEffect(() => setSeed(Math.floor(Math.random() * 2 ** 31)), []);
   const navigate = useNavigate({ from: "/" });
   const { ideas, likedIds } = useIdeas();
   const list = ideas.data ?? [];
   let all = list.filter((i) => !kategorie || i.category === kategorie);
   if (sort === "neu") all = [...all].sort((a, b) => b.created_at.localeCompare(a.created_at));
+  else if (sort === "zufall") all = [...all].sort((a, b) => rank(a.id, seed) - rank(b.id, seed));
   const totalLikes = list.reduce((s, i) => s + i.like_count, 0);
 
   return (
@@ -72,8 +83,9 @@ function Dashboard() {
               <select
                 className="border-b border-input bg-page py-s20 text-standard-bold"
                 value={sort}
-                onChange={(e) => navigate({ search: (p) => ({ ...p, sort: e.target.value as "likes" | "neu" }) })}
+                onChange={(e) => navigate({ search: (p) => ({ ...p, sort: e.target.value as "zufall" | "likes" | "neu" }) })}
               >
+                <option value="zufall">Zufällig</option>
                 <option value="likes">Meiste Likes</option>
                 <option value="neu">Neueste</option>
               </select>
