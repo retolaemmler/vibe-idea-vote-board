@@ -79,7 +79,7 @@ function Dashboard() {
               </select>
             </label>
           </div>
-          <div className="grid gap-s50 sm:grid-cols-2">
+          <div className="flex flex-col gap-s50">
             {ideas.isLoading ? (
               <Skeleton variant="box" />
             ) : all.length === 0 ? (
