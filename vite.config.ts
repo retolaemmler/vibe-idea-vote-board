@@ -22,6 +22,7 @@ export default defineConfig(({ command, mode }) => {
       if (!value) throw new Error(`Missing Vercel integration variable: ${name}`);
       process.env[`VITE_${name}`] = value;
     }
+    process.env.VITE_SUPABASE_PROJECT_ID = new URL(process.env.SUPABASE_URL!).hostname.split(".")[0];
   }
   const useCloudflare = command === "build" && !isVercel;
   const useNitro = command === "build" && isVercel;
