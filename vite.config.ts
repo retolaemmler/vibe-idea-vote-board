@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 import { cloudflare } from "@cloudflare/vite-plugin";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import { nitro } from "nitro/vite";
 import viteReact from "@vitejs/plugin-react";
 import { componentTagger } from "lovable-tagger";
 import { mockupPreviewPlugin } from "./mockupPreviewPlugin";
@@ -11,7 +12,10 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig(({ command, mode }) => {
   // Cloudflare Workers plugin only on build (produces the worker output);
   // the workerd runtime isn't available for the dev server.
-  const useCloudflare = command === "build";
+  // On Vercel (VERCEL=1) build with Nitro instead, so both hosts work.
+  const isVercel = process.env.VERCEL === "1";
+  const useCloudflare = command === "build" && !isVercel;
+  const useNitro = command === "build" && isVercel;
 
   return {
     server: {
@@ -29,6 +33,7 @@ export default defineConfig(({ command, mode }) => {
       tsConfigPaths({ projects: ["./tsconfig.json"] }),
       ...(useCloudflare ? [cloudflare({ viteEnvironment: { name: "ssr" } })] : []),
       tanstackStart(),
+      ...(useNitro ? [nitro()] : []),
       viteReact(),
       ...(mode === "development" ? [componentTagger()] : []),
     ],
