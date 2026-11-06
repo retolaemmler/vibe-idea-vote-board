@@ -14,6 +14,15 @@ export default defineConfig(({ command, mode }) => {
   // the workerd runtime isn't available for the dev server.
   // On Vercel (VERCEL=1) build with Nitro instead, so both hosts work.
   const isVercel = process.env.VERCEL === "1";
+  if (isVercel) {
+    // Vercel Marketplace supplies server names; Vite embeds only VITE_*.
+    // Override the Lovable .env defaults without exposing any private keys.
+    for (const name of ["SUPABASE_URL", "SUPABASE_PUBLISHABLE_KEY"]) {
+      const value = process.env[name];
+      if (!value) throw new Error(`Missing Vercel integration variable: ${name}`);
+      process.env[`VITE_${name}`] = value;
+    }
+  }
   const useCloudflare = command === "build" && !isVercel;
   const useNitro = command === "build" && isVercel;
 
